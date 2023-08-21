@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <header id="header">
+
+    <div class="logo">
+      <p><img src="./imags/frok and knife.png" alt="">food</p>
+    </div>
+    <nav id="nav">
+
+
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="">about us</a></li>
+        <li><a href="">our Dish</a></li>
+        <li><a href="">customer review</a></li>
+        <li><a href="">contact us</a></li>
+
+      </ul>
+    </nav>
+    <div class="header-icon">
+      <img src="./imags/search.png" alt="" id="searchIcon">
+      <img src="./imags/icons8-cart-64.png" alt="">
+      <img src="./imags/icons8-menu-50.png" alt="" id="menu">
+
+
+    </div>
+
+    <div class="search-bar">
+      <input type="search" placeholder="search anything " id="search">
+
+
+    </div>
+
+  </header>
+  <!-- 
+    landing page -->
+
+  <section class="landing-page" id="Home">
+    <div class="left-side" data-aos="fade-right">
+      <h1>Food made With <span>love</span> </h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vo consectetur adipisicing elit</p>
+      <div class="buttons">
+
+        <button class="btn">Order now</button>
+        <button class="sign-up" onclick="showSignup()"> <img src="./imags/signup.png" alt="">Signup</button>
+      </div>
+    </div>
+
+    <div class="right-side">
+
+      <img src="./imags/pic1.png" alt="">
+
+    </div>
+    <div class="switch">
+      <img src="./imags/icons8-arrow-48.png" alt="" width="30px" id="arrow">
+
+      <img src="./imags/day-and-night.png" alt="" id="switch" width="40px">
+    </div>
+
+  </section>
+
+  <div class="signup-box">
+    
+    <ion-icon name="close-outline" onclick="removeSignUp()"></ion-icon>
+      <form action="" class="signup-action">
+        <h1>Sign up</h1>
+        <div class="name">
+          <input type="text" name="" id="userNames" placeholder="enter your name">
+           <p id="userNameImg"></p> 
+         
+
+        </div>
+        <div class="email">
+        <input type="email" id="userMail" placeholder="enter your email">
+        <p id="userEmailImg"></p>
+        </div>
+        <div class="password">
+         <input type="password" name="" id="userPassword" placeholder="enter your password" minlength="8">
+         <p id="userPasswordImg"></p>
+          <img src="./imags/hide.png" alt="" width="20px" id="showHide"> 
+
+        </div>
+        <div class="rePassword">
+           
+          <input type="password" name="" id="userRePassword" placeholder="your password agin">
+         <p id="userRePasswordImg"></p>
+         <img src="./imags/hide.png" alt="" width="20px" id="showHide2"> 
+
+        </div>
+        <button class="submit">Submit</button>
+
+      </form>
+
+
+
+
+  </div>
+  <!-- section  about -->
+
+  <section class="about">
+    <h1>About us</h1>
+    <div class="row">
+      <div class="col1" data-aos="fade-up">
+        <ion-icon name="location-outline"></ion-icon>
+        <h4>any location across the world</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nulla eum facere distinctio saepe maiores ipsa
+          qui quidem eaque! Dolore, distinctio. </p>
+      </div>
+      <div class="col2" data-aos="fade-left">
+        <ion-icon name="alarm-outline"></ion-icon>
+        <h4>on time delivery</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nulla eum facere distinctio saepe maiores ipsa
+          qui quidem eaque! Dolore, distinctio. </p>
+      </div>
+      <div class="col3" data-aos="fade-up-right">
+        <ion-icon name="call-outline"></ion-icon>
+        <h4>Order anytime</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nulla eum facere distinctio saepe maiores ipsa
+          qui quidem eaque! Dolore, distinctio. </p>
+      </div>
+
+
+    </div>
+
+
+  </section>
+  <!--  dish section -->
+
+  <section class="Dish about" id="Dish">
+    <h1>our <span>Dishes</span> </h1>
+    <div class="row">
+      <div class="col1" data-aos="fade-up">
+        <div class="sub-co1">
+          <ion-icon name="pizza-outline"></ion-icon>
+          <h3>testy pizza</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, repellat adipisci. Excepturi ipsa
+            distinctio omnis, sit beatae sint</p>
+
+        </div>
+        <div class="sub-col2">
+
+          <img src="./imags/pizza.jpg" alt="">
+        </div>
+
+      </div>
+
+
+      <div class="col2">
+        <div class="sub-co1" data-aos="fade-up">
+          <ion-icon name="fast-food-outline"></ion-icon>
+          <h3>testy burger</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, repellat adipisci. Excepturi ipsa
+            distinctio omnis, sit beatae sint</p>
+
+        </div>
+        <div class="sub-col2">
+
+          <img src="./imags/burger.jpg" alt="">
+        </div>
+
+      </div>
+
+      <div class="col3" data-aos="fade-up">
+        <div class="sub-co1">
+          <ion-icon name="ice-cream-outline"></ion-icon>
+          <h3>Yammy ice-cream</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, repellat adipisci. Excepturi ipsa
+            distinctio omnis, sit beatae sint</p>
+
+        </div>
+        <div class="sub-col2">
+
+          <img src="./imags/ice-cream.jpg" alt="">
+        </div>
+
+      </div>
+
+
+      <div class="col4" data-aos="fade-up">
+        <div class="sub-co1">
+          <ion-icon name="beer-outline"></ion-icon>
+          <h3>we have Drinks</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, repellat adipisci. Excepturi ipsa
+            distinctio omnis, sit beatae sint</p>
+
+        </div>
+        <div class="sub-col2">
+          <img src="./imags/coca.jpg" alt="">
+        </div>
+
+      </div>
+
+      <div class="col5" data-aos="fade-up">
+        <div class="sub-co1">
+          <i class="fa-solid fa-cake-candles"></i>
+          <h3>we have cake</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, repellat adipisci. Excepturi ipsa
+            distinctio omnis, sit beatae sint</p>
+
+        </div>
+        <div class="sub-col2">
+          <img src="./imags/cake.jpg" alt="">
+
+        </div>
+
+      </div>
+
+      <div class="col6" data-aos="fade-up">
+        <div class="sub-co1">
+          <i class="fa-solid fa-mug-hot"></i>
+          <h3>we have healthy breakfast</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, repellat adipisci. Excepturi ipsa
+            distinctio omnis, sit beatae sint</p>
+
+        </div>
+        <div class="sub-col2">
+          <img src="./imags/breakfast.jpg" alt="">
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+  <section class="popular-dish">
+    <h1>Our <span>popular</span> menu</h1>
+    <div class="gri-display-row">
+
+      <div class="col" data-aos="flip-left">
+
+        <img src="./imags/burger.jpg" alt="">
+        <h2>testy burger</h2>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <button class="buy-button">Buy Now</button>
+        <p>10$-15$</p>
+      </div>
+      <div class="col" data-aos="flip-left">
+        <img src="./imags/cake.jpg" alt="">
+        <h2>testy cake</h2>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <button class="buy-button">Buy Now</button>
+        <p>10$-15$</p>
+      </div>
+
+      <div class="col" data-aos="flip-left">
+        <img src="./imags/ice-cream.jpg" alt="">
+        <h2>cold ice cream</h2>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <button class="buy-button">Buy Now</button>
+        <p>10$-15$</p>
+      </div>
+
+      <div class="col" data-aos="flip-right">
+        <img src="./imags/coca.jpg" alt="">
+        <h2>cold drinks</h2>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <button class="buy-button">Buy Now</button>
+        <p>10$-15$</p>
+      </div>
+
+      <div class="col" data-aos="flip-right">
+        <img src="./imags/breakfast.jpg" alt="">
+        <h2>hot breakfast</h2>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <button class="buy-button">Buy Now</button>
+        <p>10$-15$</p>
+      </div>
+
+      <div class="col" data-aos="flip-right">
+        <img src="./imags/pizza.jpg" alt="">
+        <h2>testy pizza</h2>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <button class="buy-button">Buy Now</button>
+        <p>10$-15$</p>
+      </div>
+
+
+
+
+
+    </div>
+
+
+  </section>
+  <section class="review">
+    <h1>our <span>customer</span> review</h1>
+    <div class="review-grid">
+      <div class="card1" data-aos="zoom-in">
+        <img src="./imags/r1.jpg" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quae velit sint voluptatum labore, quia
+          quas mollitia excepturi, qui iste esse voluptatibus? Id animi pariatur dolores, quae accusamus ab officia.</p>
+            
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-half"></ion-icon>
+
+      </div>
+      <div class="card1" data-aos="zoom-in">
+        <img src="./imags/r2.jpg" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quae velit sint voluptatum labore, quia
+          quas mollitia excepturi, qui iste esse voluptatibus? Id animi pariatur dolores, quae accusamus ab officia.</p>
+            
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-half"></ion-icon>
+
+      </div>
+      <div class="card1" data-aos="zoom-in">
+        <img src="./imags/r3.jpg" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quae velit sint voluptatum labore, quia
+          quas mollitia excepturi, qui iste esse voluptatibus? Id animi pariatur dolores, quae accusamus ab officia.</p>
+            
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-half"></ion-icon>
+
+      </div>
+
+
+
+
+
+    </div>
+
+  </section>
+  <section class="contact">
+
+ <h1>Contact <span>us</span></h1>
+
+ <form action="" data-aos="fade-up">
+  <input type="text" name="" id="userName" placeholder="enter your name" spellcheck="false" >
+     <input type="email" name="" id="userEmail" placeholder="enter your email" spellcheck="false">
+     <textarea  rows="5" cols="30" placeholder="your message here... "></textarea>
+
+
+   <button class="btn">Submit</button>
+
+ </form>
+
+
+
+  </section>
+  <footer>
+   <div class="wrapper-all">
+  <div class="foot-col">
+    <h4>download our app </h4>
+    <img src="./imags/f1.png" alt="" width="150px">
+    <img src="./imags/f2.png" alt="" width="150px">
+
+  </div>
+  <div class="foot-col2">
+    <h4>follow us on</h4>
+    <ion-icon name="logo-facebook"></ion-icon>
+    <ion-icon name="logo-twitter"></ion-icon>
+    <ion-icon name="logo-instagram"></ion-icon>
+    <ion-icon name="logo-github"></ion-icon>
+
+  </div>
+  <div class="foot-col3">
+    <h4>contact</h4>
+    <p><ion-icon name="map-outline"></ion-icon> dhaka</p>
+    <p><ion-icon name="call-outline"></ion-icon>+100044</p>
+    <p><ion-icon name="mail-outline"></ion-icon>example@outlook.com</p>
+    
+   
+    
+
+  </div>
+  
+
+
+
+
+   </div>
+
+   <p>created by <span>Rifat</span> || all right reserved
+   </p>
+
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1500,
+    });
+  </script>
+</body>
+
+</html>
